@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url(light-purple-pink-gradient-blur-backdrop-vector.jpg);
+    margin: 0;
+    color:azure;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(63, 38, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+#message {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(209, 216, 216);
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(105, 179, 231);
+}
